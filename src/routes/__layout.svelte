@@ -6,15 +6,15 @@
     import { browser } from "$app/env"
 
     import { onMount } from 'svelte'
-   
+
     import { initialize } from '@ionic/core/components'
     import { IonApp } from '@ionic/core/components/ion-app'
     import { IonButton } from '@ionic/core/components/ion-button'
-
+    
     onMount(async () => {        
-        initialize()
+        if (!browser) return        
         
-        if (!browser) return
+        initialize()
 
         const tryDefine = (tag: string, impl: CustomElementConstructor) => {
             try {
