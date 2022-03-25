@@ -1,26 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /// <reference types="@sveltejs/kit" />
-import type { IonApp, IonButton } from '@ionic/core/components/ion-button'
-
-declare global {
-	namespace svelte.JSX {
-		interface IntrinsicElements {
-			magicEightBall: MagicEightBallProps
-            "ion-button": Partial<IonButton>
-		}
-
-        interface MagicEightBallProps {
-			/**
-          A Yes/No question you have on your heart
-          */
-			question: ?string
-			/**
-          The personality of the user. 1 is very positive, 13 is super negative. ...
-          */
-			personality: ?number
-		}
-	}
-}
 
 declare namespace svelte.JSX {
 	interface HTMLAttributes<T> {

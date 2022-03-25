@@ -18,6 +18,7 @@ specifiers:
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^3.2.1
+  ionicons: ^6.0.1
   prettier: ^2.5.1
   prettier-plugin-svelte: ^2.5.0
   sass: ^1.49.9
@@ -37,6 +38,7 @@ dependencies:
   '@capacitor/keyboard': 1.2.2_@capacitor+core@3.4.3
   '@capacitor/status-bar': 1.0.8_@capacitor+core@3.4.3
   '@ionic/core': 6.0.13
+  ionicons: 6.0.1
   windicss: 3.5.1
 
 devDependencies:
