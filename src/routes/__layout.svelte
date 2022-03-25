@@ -1,17 +1,21 @@
 <script lang="ts">
     import 'virtual:windi.css'
     import '$lib/styles/global.sass'
+    import '@ionic/core/css/ionic.bundle.css'
+
+    import { browser } from "$app/env"
 
     import { onMount } from 'svelte'
+   
+    import { initialize } from '@ionic/core/components'
+    import { IonApp } from '@ionic/core/components/ion-app'
+    import { IonButton } from '@ionic/core/components/ion-button'
 
-    import { initialize } from "@ionic/core/components";
-    import { IonApp } from "@ionic/core/components/ion-app";
-    import { IonRouterOutlet } from "@ionic/core/components/ion-router-outlet";
-    import { IonButton } from "@ionic/core/components/ion-button";
-
-    onMount(() => {
-        initialize();
+    onMount(async () => {        
+        initialize()
         
+        if (!browser) return
+
         const tryDefine = (tag: string, impl: CustomElementConstructor) => {
             try {
                 customElements.define(tag, impl);
@@ -19,7 +23,7 @@
         }
 
         tryDefine("ion-app", IonApp)
-        tryDefine("ion-router-outlet", IonRouterOutlet)
+        // tryDefine("ion-router-outlet", IonRouterOutlet)
         tryDefine("ion-button", IonButton)
     })
 </script>

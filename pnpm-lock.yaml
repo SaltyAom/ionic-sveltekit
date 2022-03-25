@@ -5,6 +5,7 @@ specifiers:
   '@capacitor/cli': 3.4.3
   '@capacitor/core': 3.4.3
   '@capacitor/haptics': 1.1.4
+  '@capacitor/ios': 3.4.3
   '@capacitor/keyboard': 1.2.2
   '@capacitor/status-bar': 1.0.8
   '@ionic/core': ^6.0.13
@@ -32,6 +33,7 @@ dependencies:
   '@capacitor/app': 1.1.1_@capacitor+core@3.4.3
   '@capacitor/core': 3.4.3
   '@capacitor/haptics': 1.1.4_@capacitor+core@3.4.3
+  '@capacitor/ios': 3.4.3_@capacitor+core@3.4.3
   '@capacitor/keyboard': 1.2.2_@capacitor+core@3.4.3
   '@capacitor/status-bar': 1.0.8_@capacitor+core@3.4.3
   '@ionic/core': 6.0.13
@@ -576,7 +578,7 @@ packages:
       '@babel/helper-split-export-declaration': 7.16.7
       '@babel/parser': 7.17.8
       '@babel/types': 7.17.0
-      debug: 4.3.3
+      debug: 4.3.4
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -633,6 +635,14 @@ packages:
     resolution: {integrity: sha512-+pJIb5X7xAcbrWj6rJaV+cwBlv8aFwB1/Ob6EV4atydThuuVSSsAL4hI4ZYlPNOxM6H5s+ZDLj7Pa2os4eFmtg==}
     peerDependencies:
       '@capacitor/core': ^3.0.0
+    dependencies:
+      '@capacitor/core': 3.4.3
+    dev: false
+
+  /@capacitor/ios/3.4.3_@capacitor+core@3.4.3:
+    resolution: {integrity: sha512-WG6LHzkclYfiF8yBty31j256SD8XmNN1FlOiJUVeu5wz9gM4vw8FpTYIkj2VJoiBnQiB/OWotfnJp2Mp1Rfbtg==}
+    peerDependencies:
+      '@capacitor/core': ^3.4.0
     dependencies:
       '@capacitor/core': 3.4.3
     dev: false
